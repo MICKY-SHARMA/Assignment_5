@@ -1,0 +1,34 @@
+#TASK-1
+
+# Step 1: Create a dictionary of students and their marks
+students_marks = {
+    "Rahul": 85,
+    "Micky": 92,
+    
+}
+
+# Step 2: Ask the user to enter a student's name
+name = input("Enter the student's name: ")
+
+# Step 3 & 4: Retrieve and display marks or show message if not found
+if name in students_marks:
+    print(f"Marks of {name}: {students_marks[name]}")
+else:
+    print("Student not found.")
+
+
+#TASK-2
+
+# Step 1: Create a list of numbers from 1 to 10
+numbers = list(range(1, 11))
+
+# Step 2: Extract the first five elements
+first_five = numbers[:5]
+
+# Step 3: Reverse the extracted elements
+reversed_list = first_five[::-1]
+
+# Step 4: Print all lists
+print("Original list:", numbers)
+print("Extracted list:", first_five)
+print("Reversed list:", reversed_list)
